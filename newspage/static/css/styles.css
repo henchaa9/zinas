@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container nav h1 {
+    font-size: 3em;
+}
+
+.container {
+    padding: 30px 10%; 
+}
+
+.container h3 {
+    padding-bottom: 8px;
+    font-size: 1.4em;
+}
+
+.container div {
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.container div ul li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.container div a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+
