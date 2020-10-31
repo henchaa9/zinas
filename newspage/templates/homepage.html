@@ -11,10 +11,14 @@
     <div class="container">
         <nav>
             <h1>ZiņuLapa</h1>
+            <ul>
+                <li><p>30.02.2020.</p></li>
+                <li><p>Jānis, Pēteris, Muhameds</p></li>
+            </ul>
         </nav>
         <div class="delfi-apollo">
             <div class="delfi">
-                <h3>Delfi</h3>
+                <a href="https://www.delfi.lv"><h3>Delfi.lv</h3></a>
                 <ul>
                     {% for item in delfi %}
                     <li><a href={{ item.1 }}>{{ item.0 }}</a></li>
@@ -22,17 +26,18 @@
                 </ul>
             </div>
             <div class="apollo">
-                <h3>Apollo</h3>
+                <a href="https://www.apollo.lv"><h3>Apollo.lv</h3></a>
                 <ul>
                     {% for item in apollo %}
                     <li><a href={{ item.1 }}>{{ item.0 }}</a></li>
                     {% endfor %}
                 </ul>
             </div>
+            <div class="left-over"></div>
         </div>
         <div class="tvnet-kkas">
             <div class="tvnet">
-                <h3>Tvnet</h3>
+                <a href="https://www.tvnet.lv"><h3>Tvnet.lv</h3></a>
                 <ul>
                     {% for item in tvnet %}
                     <li><a href={{ item.1 }}>{{ item.0 }}</a></li>
