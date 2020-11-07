@@ -12,8 +12,8 @@
         <nav>
             <h1>ZiņuLapa</h1>
             <ul>
-                <li><p>30.02.2020.</p></li>
-                <li><p>Jānis, Pēteris, Muhameds</p></li>
+                <li><p>{{ datums }}</p></li>
+                <li><p>{{ vardadienas }}</p></li>
             </ul>
         </nav>
         <div class="delfi-apollo">
@@ -40,6 +40,14 @@
                 <a href="https://www.tvnet.lv"><h3>Tvnet.lv</h3></a>
                 <ul>
                     {% for item in tvnet %}
+                    <li><a href={{ item.1 }}>{{ item.0 }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="la">
+                <a href="https://www.la.lv"><h3>La.lv</h3></a>
+                <ul>
+                    {% for item in la %}
                     <li><a href={{ item.1 }}>{{ item.0 }}</a></li>
                     {% endfor %}
                 </ul>

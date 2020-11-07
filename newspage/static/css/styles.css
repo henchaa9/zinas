@@ -28,7 +28,7 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    padding-left: 5px;
+    padding-left: 8px;
 }
 
 nav h1 {
@@ -54,7 +54,7 @@ nav h1 {
 
 .delfi-apollo ul li, .tvnet-kkas ul li {
     list-style-type: none;
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
 .delfi-apollo a, .tvnet-kkas a {
@@ -63,7 +63,7 @@ nav h1 {
     font-weight: bolder;
 }
 
-.delfi, .apollo, .tvnet {
+.delfi, .apollo, .tvnet, .la {
     background-color: #d9eff0;
     margin: 0 5px;
     padding: 5px;
