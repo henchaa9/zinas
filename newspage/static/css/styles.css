@@ -3,6 +3,11 @@
     src: url('/static/fonts/Roboto-Regular.ttf') format("truetype");
   }
 
+@font-face {
+    font-family: 'DancingScript-Bold';
+    src: url('/static/fonts/DancingScript-Bold.ttf') format("truetype");
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -15,9 +20,9 @@ body {
 
 nav {
     height: 60px;
-    background: #006D77;
-    margin-bottom: 10px;
-    text-shadow: 1px 1px 3px #002529;
+    background: #292F36;
+    text-shadow: 2px 3px 6px black;
+    margin: 0 5px;
 }
 
 nav ul {
@@ -47,25 +52,56 @@ nav h1 {
     display: inline-block;
 }
 
-.delfi-apollo, .tvnet-kkas {
+.delfi-apollo, .tvnet-la, .bbc-kkas {
     padding-bottom: 10px;
     display: flex;
 }
 
-.delfi-apollo ul li, .tvnet-kkas ul li {
+.delfi-apollo ul li, .tvnet-la ul li, .bbc-kkas ul li {
     list-style-type: none;
     padding: 10px 0;
 }
 
-.delfi-apollo a, .tvnet-kkas a {
+.delfi-apollo a, .tvnet-la a, .bbc-kkas a {
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: bolder;
+    text-shadow: 2px 3px 6px #248680;
 }
 
-.delfi, .apollo, .tvnet, .la {
-    background-color: #d9eff0;
+.delfi, .apollo, .tvnet, .la, .bbc {
+    background-color: #4ECDC4;
     margin: 0 5px;
     padding: 5px;
     width: 50%;
+}
+
+.vietejas-zinas {
+    height: 60px;
+    background-color: #ff6b6b;
+    margin: 10px 5px 10px 5px;
+    text-align: center;
+    color: white;
+}
+
+.vietejas-zinas p {
+    font-family: 'DancingScript-Bold';
+    font-size: 2.5em;
+    text-shadow: 2px 3px 6px #752a2a;
+
+}
+
+.arzemju-zinas {
+    height: 60px;
+    background-color: #ff6b6b;
+    margin: 0 5px 10px 5px;
+    text-align: center;
+    color: white;
+}
+
+.arzemju-zinas p {
+    font-family: 'DancingScript-Bold';
+    font-size: 2.5em;
+    text-shadow: 2px 3px 6px #752a2a;
+
 }

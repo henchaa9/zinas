@@ -89,6 +89,27 @@ def la():
 
     return out
 
+#BBC
+def bbc():
+
+    bbc = requests.get('https://www.bbc.com/')
+    soup = BeautifulSoup(bbc.text, 'html.parser')
+
+    elements = soup.find_all(class_='block-link', limit=6)
+
+    out = []
+
+    for item in elements:
+        title = item['data-bbc-title'].strip()
+        link = item.find(class_='block-link__overlay-link')['href']
+
+        if link[0] == '/':
+            link = 'https://www.bbc.com' + link
+            
+        out.append([title,link])
+
+    return out
+
 
 # Create your views here.
 
@@ -99,6 +120,7 @@ def home_view(request, *args, **kwargs):
             'apollo' : apollo(),
             'tvnet' : tvnet(),
             'la' : la(),
+            'bbc' : bbc(),
             'datums' : datums,
             'vardadienas' : vardadienas()
             }

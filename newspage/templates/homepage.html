@@ -16,6 +16,9 @@
                 <li><p>{{ vardadienas }}</p></li>
             </ul>
         </nav>
+        <div class="vietejas-zinas">
+            <p>Vietējās ziņas</p>
+        </div>
         <div class="delfi-apollo">
             <div class="delfi">
                 <a href="https://www.delfi.lv"><h3>Delfi.lv</h3></a>
@@ -35,7 +38,7 @@
             </div>
             <div class="left-over"></div>
         </div>
-        <div class="tvnet-kkas">
+        <div class="tvnet-la">
             <div class="tvnet">
                 <a href="https://www.tvnet.lv"><h3>Tvnet.lv</h3></a>
                 <ul>
@@ -48,6 +51,19 @@
                 <a href="https://www.la.lv"><h3>La.lv</h3></a>
                 <ul>
                     {% for item in la %}
+                    <li><a href={{ item.1 }}>{{ item.0 }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="arzemju-zinas">
+            <p>Ārzemju ziņas</p>
+        </div>
+        <div class="bbc-kkas">
+            <div class="bbc">
+                <a href="https://www.bbc.com/"><h3>Bbc.com</h3></a>
+                <ul>
+                    {% for item in bbc %}
                     <li><a href={{ item.1 }}>{{ item.0 }}</a></li>
                     {% endfor %}
                 </ul>
