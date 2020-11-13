@@ -8,14 +8,14 @@
     <link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}"/>
 </head>
 <body>
+    <nav>
+        <h1>ZiņuLapa</h1>
+        <ul>
+            <li><p>{{ datums }}</p></li>
+            <li><p>{{ vardadienas }}</p></li>
+        </ul>
+    </nav>
     <div class="container">
-        <nav>
-            <h1>ZiņuLapa</h1>
-            <ul>
-                <li><p>{{ datums }}</p></li>
-                <li><p>{{ vardadienas }}</p></li>
-            </ul>
-        </nav>
         <div class="vietejas-zinas">
             <p>Vietējās ziņas</p>
         </div>
