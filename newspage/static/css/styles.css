@@ -16,19 +16,19 @@
 
 body {
     color: white;
+    background-color: #48515c;
 }
 
 nav {
     height: 60px;
     background: #292F36;
     text-shadow: 2px 3px 6px black;
-    margin: 0 5px;
 }
 
 nav ul {
     float: right;
     list-style-type: none;
-    padding: 20px 10px;
+    padding: 20px 10%;
 }
 
 nav ul li {
@@ -39,7 +39,7 @@ nav ul li {
 nav h1 {
     font-size: 3em;
     display: inline;
-    padding: 0 10px;
+    padding: 0 10%;
 }
 
 .container {
@@ -64,21 +64,21 @@ nav h1 {
 
 .delfi-apollo a, .tvnet-la a, .bbc-kkas a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: black;
     font-weight: bolder;
-    text-shadow: 2px 3px 6px #248680;
 }
 
 .delfi, .apollo, .tvnet, .la, .bbc {
-    background-color: #4ECDC4;
+    background-color: white;
     margin: 0 5px;
     padding: 5px;
     width: 50%;
+    box-shadow: 3px 3px 3px #292F36;
 }
 
 .vietejas-zinas {
     height: 60px;
-    background-color: #ff6b6b;
+    background-color: #f37474;
     margin: 10px 5px 10px 5px;
     text-align: center;
     color: white;
@@ -88,12 +88,12 @@ nav h1 {
     font-family: 'DancingScript-Bold';
     font-size: 2.5em;
     text-shadow: 2px 3px 6px #752a2a;
-
+    padding-top: 3px;
 }
 
 .arzemju-zinas {
     height: 60px;
-    background-color: #ff6b6b;
+    background-color: #f37474;
     margin: 0 5px 10px 5px;
     text-align: center;
     color: white;
@@ -103,5 +103,5 @@ nav h1 {
     font-family: 'DancingScript-Bold';
     font-size: 2.5em;
     text-shadow: 2px 3px 6px #752a2a;
-
+    padding-top: 2px;
 }
