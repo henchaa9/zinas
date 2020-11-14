@@ -110,6 +110,24 @@ def bbc():
 
     return out
 
+#Nbcnews
+def nbcnews():
+
+    nbcnews = requests.get('https://www.nbcnews.com/')
+    soup = BeautifulSoup(nbcnews.text, 'html.parser')
+
+    elements = soup.find_all(class_='tease-card__headline tease-card__title relative', limit=6)
+
+    out = []
+
+    for item in elements:
+        title = item.find(class_='tease-card__headline').text.strip()
+        link = item.find('a')['href']
+            
+        out.append([title,link])
+
+    return out
+
 
 # Create your views here.
 
@@ -121,6 +139,7 @@ def home_view(request, *args, **kwargs):
             'tvnet' : tvnet(),
             'la' : la(),
             'bbc' : bbc(),
+            'nbcnews' : nbcnews(),
             'datums' : datums,
             'vardadienas' : vardadienas()
             }

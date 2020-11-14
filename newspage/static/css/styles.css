@@ -52,23 +52,23 @@ nav h1 {
     display: inline-block;
 }
 
-.delfi-apollo, .tvnet-la, .bbc-kkas {
+.delfi-apollo, .tvnet-la, .bbc-nbcnews {
     padding-bottom: 10px;
     display: flex;
 }
 
-.delfi-apollo ul li, .tvnet-la ul li, .bbc-kkas ul li {
+.delfi-apollo ul li, .tvnet-la ul li, .bbc-nbcnews ul li {
     list-style-type: none;
     padding: 10px 0;
 }
 
-.delfi-apollo a, .tvnet-la a, .bbc-kkas a {
+.delfi-apollo a, .tvnet-la a, .bbc-nbcnews a {
     text-decoration: none;
     color: black;
     font-weight: bolder;
 }
 
-.delfi, .apollo, .tvnet, .la, .bbc {
+.delfi, .apollo, .tvnet, .la, .bbc, .nbc {
     background-color: white;
     margin: 0 5px;
     padding: 5px;

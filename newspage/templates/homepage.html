@@ -59,11 +59,19 @@
         <div class="arzemju-zinas">
             <p>Ārzemju ziņas</p>
         </div>
-        <div class="bbc-kkas">
+        <div class="bbc-nbcnews">
             <div class="bbc">
                 <a href="https://www.bbc.com/"><h3>Bbc.com</h3></a>
                 <ul>
                     {% for item in bbc %}
+                    <li><a href={{ item.1 }}>{{ item.0 }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="bbc">
+                <a href="https://www.nbcnews.com/"><h3>Nbcnews.com</h3></a>
+                <ul>
+                    {% for item in nbcnews %}
                     <li><a href={{ item.1 }}>{{ item.0 }}</a></li>
                     {% endfor %}
                 </ul>
