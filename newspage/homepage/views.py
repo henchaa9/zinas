@@ -29,6 +29,10 @@ def delfi():
     for item in elements:
         title = item.find("h1").text.strip()
         link = item.find("a", href=True)
+
+        if 'PLUS' in title:
+            title = title.split('PLUS')[1]
+
         out.append([title,link["href"]])
 
     return out
@@ -47,6 +51,9 @@ def apollo():
     for item in elements:
         title = item.find('span').text.strip()
         link = item['href']
+
+        if title[-1] == ')':
+            title = title[:-4]
         
         out.append([title,link])
 
@@ -66,6 +73,9 @@ def tvnet():
     for item in elements:
         title = item.find('span').text.strip()
         link = item['href']
+
+        if title[-1] == ')':
+            title = title[:-4]
         
         out.append([title,link])
 
@@ -128,20 +138,58 @@ def nbcnews():
 
     return out
 
+#Theguardian
+def theguardian():
+
+    theguardian = requests.get('https://www.theguardian.com/world')
+    soup = BeautifulSoup(theguardian.text, 'html.parser')
+
+    elements = soup.find_all(class_='u-faux-block-link__overlay js-headline-text', limit=6)
+
+    out = []
+
+    for item in elements:
+        title = item.text.strip()
+        link = item['href']
+            
+        out.append([title,link])
+
+    return out
+
+#Nytimes
+def nytimes():
+
+    nytimes = requests.get('https://www.nytimes.com/section/world')
+    soup = BeautifulSoup(nytimes.text, 'html.parser')
+
+    elements = soup.find_all(class_='css-qrzo5d e134j7ei0', limit=6)
+
+    out = []
+
+    for item in elements:
+        title = item.text.strip()
+        link = item.find('a')['href']
+            
+        out.append([title,link])
+
+    return out
+
 
 # Create your views here.
 
 def home_view(request, *args, **kwargs):
 
     thing = {
+            'datums' : datums,
+            'vardadienas' : vardadienas(),
             'delfi' : delfi(),
             'apollo' : apollo(),
             'tvnet' : tvnet(),
             'la' : la(),
             'bbc' : bbc(),
             'nbcnews' : nbcnews(),
-            'datums' : datums,
-            'vardadienas' : vardadienas()
+            'theguardian' : theguardian(),
+            'nytimes' : nytimes()
             }
 
     return render(request, "homepage.html", thing)

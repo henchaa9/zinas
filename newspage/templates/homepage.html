@@ -77,6 +77,24 @@
                 </ul>
             </div>
         </div>
+        <div class="theguardian-nytimes">
+            <div class="theguardian">
+                <a href="https://www.theguardian.com/world"><h3>Theguardian.com</h3></a>
+                <ul>
+                    {% for item in theguardian %}
+                    <li><a href={{ item.1 }}>{{ item.0 }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="nytimes">
+                <a href="https://www.nytimes.com/section/world"><h3>Nytimes.com</h3></a>
+                <ul>
+                    {% for item in nytimes %}
+                    <li><a href={{ item.1 }}>{{ item.0 }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
 </html>

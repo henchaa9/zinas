@@ -47,28 +47,28 @@ nav h1 {
 }
 
 .container a h3 {
-    padding-bottom: 8px;
+    margin-bottom: 8px;
     font-size: 1.6em;
     display: inline-block;
 }
 
-.delfi-apollo, .tvnet-la, .bbc-nbcnews {
+.delfi-apollo, .tvnet-la, .bbc-nbcnews, .theguardian-nytimes {
     padding-bottom: 10px;
     display: flex;
 }
 
-.delfi-apollo ul li, .tvnet-la ul li, .bbc-nbcnews ul li {
+.delfi-apollo ul li, .tvnet-la ul li, .bbc-nbcnews ul li, .theguardian-nytimes ul li {
     list-style-type: none;
     padding: 10px 0;
 }
 
-.delfi-apollo a, .tvnet-la a, .bbc-nbcnews a {
+.delfi-apollo a, .tvnet-la a, .bbc-nbcnews a, .theguardian-nytimes a {
     text-decoration: none;
     color: black;
     font-weight: bolder;
 }
 
-.delfi, .apollo, .tvnet, .la, .bbc, .nbc {
+.delfi, .apollo, .tvnet, .la, .bbc, .nbc, .theguardian, .nytimes {
     background-color: white;
     margin: 0 5px;
     padding: 5px;
@@ -79,7 +79,7 @@ nav h1 {
 .vietejas-zinas {
     height: 60px;
     background-color: #f37474;
-    margin: 10px 5px 10px 5px;
+    margin: 9px 5px 10px 5px;
     text-align: center;
     color: white;
 }
@@ -94,7 +94,7 @@ nav h1 {
 .arzemju-zinas {
     height: 60px;
     background-color: #f37474;
-    margin: 0 5px 10px 5px;
+    margin: 10px 5px 10px 5px;
     text-align: center;
     color: white;
 }
@@ -103,5 +103,5 @@ nav h1 {
     font-family: 'DancingScript-Bold';
     font-size: 2.5em;
     text-shadow: 2px 3px 6px #752a2a;
-    padding-top: 2px;
+    padding-top: 3px;
 }
