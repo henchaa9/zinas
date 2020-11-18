@@ -23,6 +23,7 @@ nav {
     height: 60px;
     background: #292F36;
     text-shadow: 2px 3px 6px black;
+    padding: 5px 0 5px 0;
 }
 
 nav ul {
@@ -115,5 +116,54 @@ footer {
 }
 
 footer p {
-    padding-top: 30px;
+    opacity: 60%;
+}
+
+.footer-left {
+    padding: 15px 0 0 10%;
+    float: left;
+    list-style-type: none;
+}
+
+.footer-left input {
+    margin-top: 6px;
+    height: 20px;
+}
+
+.footer-left button {
+    border: none;
+    background: #e26262;
+    color: white;
+    text-transform: uppercase;
+    padding: 5px;
+    font-weight: bold;
+    text-shadow: 2px 3px 6px #752a2a;
+    box-shadow: 3px 3px 3px #292F36;
+}
+
+.footer-left button:hover {
+    background: #a34949;
+}
+
+.footer-left li p {
+    display: inline;
+}
+
+.footer-left p {
+    text-transform: uppercase;
+}
+
+.footer-right {
+    padding: 8px 10% 0 0;
+    float: right;
+    list-style-type: none;
+}
+
+.footer-contact {
+    padding-bottom: 4px;
+    font-weight: bolder;
+}
+
+.footer-email {
+    padding-bottom: 3px;
 }
